@@ -1,10 +1,14 @@
 main {
-    font-family: 'Roboto Mono', monospace;
+    font-family: "Roboto Mono", monospace;
     position: relative;
 }
 
+body{
+    background-color: #922e81;
+}
+
 .circle {
-    border-radius: 50%;
+    border-radius:50%;
     width: 120px;
     height: 120px;
     border: 1px solid #fff;
@@ -16,7 +20,7 @@ main {
     flex-direction: column;
 }
 
-.circle::before {
+.circle::before{
     content: '';
     border-radius: 50%;
     z-index: -1;
@@ -41,8 +45,8 @@ main {
 }
 
 @keyframes rotacion {
-	from { 	transform: rotate(-90deg) translateX(60px); }
-	to   {  transform: rotate(270deg) translateX(60px); }
+    from { transform: rotate(-90deg) translateX(60px);}
+    to  { transform: rotate(270deg) translateX(60px);}
 }
 
 .buttons {
